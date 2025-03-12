@@ -1,0 +1,85 @@
+/* General styling for form and inputs */
+form {
+    font-family: Arial, sans-serif;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f4f4;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+/* Style the legend (Title) */
+legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Style each label to display on a separate line */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Style inputs, checkboxes, and radio buttons */
+input[type="text"], input[type="number"], input[type="password"], input[type="radio"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style the error messages */
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+    display: block;
+}
+
+/* Make the Submit button look nicer */
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Display success message */
+#successMessage {
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* Style the radio buttons and their labels to display inline */
+/* Style the radio buttons and their labels to display inline */
+/* Style the radio buttons and their labels to display inline */
+/* Style the radio buttons and their labels to display inline */
+/* Style the radio buttons and their labels to display inline */
+input[type="radio"] {
+    transform: translateY(30PX);
+
+}
+
+.centered-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 430px; /* Set the width to your desired size */
+    height: 240px; /* Set the height to your desired size */
+}
+
+

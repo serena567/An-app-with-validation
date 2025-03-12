@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Registration</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <img src="images/1.jpg" alt="Delicious pizza" class="centered-img" />
+
+    <form id="pizzaForm">
+        <fieldset>
+            <legend>Register for <span style="font-weight: bold; text-transform: uppercase;">Free</span> Pizza</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required minlength="3" placeholder="Name can not be number">
+            <span class="error" id="nameError"></span>
+
+            <label for="birthYear">Year of Birth:</label>
+            <input type="number" id="birthYear" required min="1900" max="2025">
+            <span class="error" id="yearError"></span>
+
+            <label>
+                <input type="checkbox" id="usResident">
+                Do you live in the United States?
+            </label>
+
+            <div id="zipcodeField" style="display: none;">
+                <label for="zipcode">Zipcode:</label>
+                <input type="text" id="zipcode" pattern="\d{5}" placeholder="Enter 5-digit ZIP code">
+                <span class="error" id="zipError"></span>
+            </div>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" required minlength="8" placeholder="Password must be at least 8 characters.">
+            <span class="error" id="passwordError"></span>
+
+            <fieldset>
+                <legend>Preferred Pizza Type:</legend>
+                <label><input type="radio" name="pizza" value="with"> With pineapple</label>
+                <label><input type="radio" name="pizza" value="without"> Without pineapple</label>
+                <label><input type="radio" name="pizza" value="no"> I do not like pizza</label>
+                <span class="error" id="pizzaError"></span>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+
+    <p id="successMessage" style="display: none; color: green;">Accepted</p>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
